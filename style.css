@@ -9,6 +9,8 @@ body{
 .containerPrincipal{
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
     text-align: center;
     background-color: black;
 }
@@ -19,6 +21,7 @@ body{
     width: 900px;
     height: 700px;
     background-color: rgb(14, 14, 14);
+    top: 50%;
     transform: translateY(20%);
     border: 2px;
     border-color: darkorange;
@@ -58,7 +61,7 @@ h1{
     position: absolute;
     bottom: 30px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-60%);
     margin: auto;
     color: white;
     list-style: none;
@@ -67,4 +70,87 @@ h1{
 li{
     float: left;
     margin: 15px;
+}
+
+.listIcons{
+    width: 42px;
+}
+
+@media screen and (max-width: 920px) {
+    .principal{
+        width: 600px;
+        height: 700px;
+    }
+
+    .perfil{
+        left: 50%;
+        transform: translateX(-55%);
+        top: 20%;
+    }
+
+    .txt{
+        max-width: 80%;
+        top: 67%;
+        transform: translateY(-50%);
+        color: white;
+    }
+
+    .redes{
+        transform: translateX(-63%);
+        bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    h1{
+        font-size: 30px;
+    }
+
+    .listIcons{
+        width: 32px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .principal{
+        width: 300px;
+        height: 600px;
+        transform: translateY(10%);
+    }
+
+    h1{
+        margin-top: 30px;
+        font-size: 25px;
+        width: 70%;
+    }
+
+    .perfil{
+        left: 50%;
+        top: 15%;
+    }
+
+    .txt{
+        width: 300px;
+        top: 34%;
+        transform: translateY(-50%);
+        font-size: 13px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .redes{
+        width: 150px;
+        transform: translateX(-63%);
+        bottom: 15px;
+    }
+
+    .listIcons{
+        width: 32px;
+    }
+}
+
+@media screen and (max-height: 740px) {
+    .principal{
+        transform: translateY(0.5%);
+    }
 }
